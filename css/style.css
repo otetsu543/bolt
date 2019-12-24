@@ -11,6 +11,7 @@ a{
   width: 100%;
   position: fixed;
   background-color: #fff;
+  z-index: 1;
 }
 .inner{
   width: 1100px;
@@ -94,28 +95,27 @@ a{
 }
 
 .robot-footer{
-  margin-top:10px  ;
   display: flex;
   justify-content: center;
+  margin-top: 90px;
 }
 .robot {
-  margin-bottom: 90px;
   font-size: 0;
 }
 .robot-img {
   transition: 0.3s;
   opacity: 0.7;
 }
-.robot-img:hover{
+.robot-img:hover > img{
   opacity: 1;
 }
-.robot-img > img{
+.robot-img {
   margin: 80px 0 0 100px;
 }
-.robot-img:nth-child(-n+3) > img{
+.robot-img:nth-child(-n+3) {
   margin-top: 0;
 }
-.robot-img:nth-child(3n+1) > img {
+.robot-img:nth-child(3n+1) {
   margin-left: 0;
 }
 .robot-button {
@@ -143,7 +143,7 @@ a{
 .circle {
   display: flex;
   font-size: 0px;
-  padding-top: 70px;
+  margin-top: 70px;
   justify-content: center;
 }
 .circle-img{
@@ -176,6 +176,7 @@ a{
   justify-content: center;
   text-decoration: none;
   transition: 0.3s;
+  padding: 30px 0;
 }
 .icon:hover{
   background-color: #fff;
@@ -201,20 +202,21 @@ a{
     width: 97%;
   }
   .smartphone-box {
-    display: inline-block;
+    display: block;
+    padding: 50px 0 25px;
   }
   .smartphone-text{
-    margin: 20px 0 25px;
+    margin: 20px 0 0;
   }
   .robot-img{
     display: block;
   }
-  .robot-img > img {
+  .robot-img  {
     margin: 0;
   }
-  .robot-img:nth-of-type(3)
+  .robot-img:nth-of-type(3n+1)
   {
-    margin-bottom: 80px;
+    margin-top: 80px;
   }
   .robot-footer
   {
@@ -279,5 +281,6 @@ a{
   }
   .icon{
     margin: auto;
+    width: 25px;
   }
 }

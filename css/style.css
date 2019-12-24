@@ -170,7 +170,6 @@ a{
 	font-family:'Font Awesome 5 Free';
   font-weight:900;
   width: 185px;
-  height: 130px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,6 +217,9 @@ a{
   {
     margin-top: 80px;
   }
+  .robot-img:first-of-type {
+    margin-top: 0;
+  }
   .robot-footer
   {
     display: block;
@@ -231,7 +233,9 @@ a{
   .circle-img {
     margin: 88px 0 0;
   }
-
+  .icon{
+    width: 25%;
+  }
 }
 @media screen and (max-width:767px) {
   .contact{
@@ -281,6 +285,6 @@ a{
   }
   .icon{
     margin: auto;
-    width: 25px;
+    width: 100%;
   }
 }
